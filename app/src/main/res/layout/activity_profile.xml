@@ -7,19 +7,19 @@
   <data>
     <variable
         name="user"
-        type="com.jemaystermind.archcomponents.User"
+        type="com.jemaystermind.archcomponents.persistence.User"
         />
   </data>
   <android.support.constraint.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      tools:context="com.jemaystermind.archcomponents.MainActivity"
+      tools:context="com.jemaystermind.archcomponents.ProfileActivity"
       >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@{user.name}"
+        android:text="@{user.name + ` ` + user.age}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
